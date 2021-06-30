@@ -1,0 +1,33 @@
+.container__data {
+  height: 50%;
+  box-shadow: 0 1rem 1rem #888888;
+}
+
+.container__button {
+  /* .row(height) - .container__data(height) - .container__data(box-shadow) */
+  height: (100% - 50% - 1rem);
+  background-color: #ecf0f1;
+}
+
+.custom-btn {
+  width: 19rem;
+  height: 7rem;
+  margin: 10% 0 0;
+  background-color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 2rem;
+  position: relative;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.custom-btn:hover {
+  background-color: #2ed573;
+  color: #fff;
+}
+
+.custom-btn.active {
+  background-color: #4cd137;
+  color: #fff;
+}

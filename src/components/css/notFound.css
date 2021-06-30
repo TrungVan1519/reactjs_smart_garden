@@ -1,0 +1,24 @@
+.container__not-found .logo {
+  width: 50%;
+  height: 50%;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .container__not-found .logo {
+    animation: container__not-found-spin infinite 10s linear;
+  }
+  .container__not-found .icon {
+    margin: 1%;
+    animation: container__not-found-spin infinite 10s linear;
+  }
+}
+
+@keyframes container__not-found-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
